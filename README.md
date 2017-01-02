@@ -25,7 +25,7 @@ Les capes ràster són imatges creades a partir de la topografia (alçades
 i pendents) i dels usos del sòl.
 
 | Ordre | Origen | Tipus                             | Identificador  | Classe |
-|:----- |:------ |:--------------------------------- |:------------- -|:------ |
+| ----- | ------ | --------------------------------- | -------------- | ------ |
 | 1     | SIGPAC | Us del sòl Bages                  | sol_bages      | sol    |
 | 2     | SIGPAC | Us del sòl Vallès Oriental        | sol_valles_or  | sol    |
 | 3     | SIGPAC | Us del sòl Vallès Occidental      | sol_valles_oc  | sol    |
