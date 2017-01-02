@@ -30,3 +30,4 @@ i pendents) i dels usos del sòl.
 | 2     | SIGPAC | Us del sòl Vallès Oriental        | sol_valles_or  | sol    |
 | 3     | SIGPAC | Us del sòl Vallès Occidental      | sol_valles_oc  | sol    |
 | 4     | ICGC   | Ombrejat de muntanyes             | hillshade      |        |
+| 5     | ICGC   | Pendents                          | slope          |        |

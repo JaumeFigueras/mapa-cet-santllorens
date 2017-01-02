@@ -25,7 +25,10 @@
   }
 }
 
-
 #hillshade {
   raster-opacity:0.3;
+}
+
+#slope {
+  raster-opacity:0.1;
 }

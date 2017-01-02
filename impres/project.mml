@@ -67,6 +67,17 @@
       "srs": "+proj=utm +zone=31 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
     },
     {
+      "id": "slope",
+      "name": "slope",
+      "geometry": "raster",
+      "Datasource": {
+        "file": "/home/jaume/projectes/osm/sant-llorenc/data/elevacions-5m/slope-sant-llorenc-25831.tiff",
+        "type": "gdal"
+      },
+      "srs-name": "custom",
+      "srs": "+proj=utm +zone=31 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+    },
+    {
       "id": "CorbesNivell",
       "name": "CorbesNivell",
       "geometry": "linestring",
