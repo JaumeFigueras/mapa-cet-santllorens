@@ -1,0 +1,48 @@
+Map {
+  background-color: #aaaaaa;
+}
+
+@100-0mm: 2362.00px;
+@50-0mm: 1181.00px;
+@30-0mm: 708.60px;
+@10-0mm: 236.20px;
+@7-0mm: 165.34px;
+@5-8mm: 136.99px;
+@4-0mm: 94.48px;
+@3-0mm: 70.86px;
+@2-5mm: 59.05px;
+@2-4mm: 56.68px;
+@2-0mm: 47.24px;
+@1-6mm: 37.79px;
+@1-5mm: 35.43px;
+@1-5mm-: -35.43px;
+@1-4mm: 33.07px;
+@1-3mm: 30.71px;
+@1-2mm: 28.35px;
+@1-0mm: 23.62px;
+@0-9mm: 21.26px;
+@0-8mm: 18.9px;
+@0-7mm: 16.54px;
+@0-6mm: 14.17px;
+@0-5mm: 11.81px;
+@0-4mm: 9.45px;
+@0-3mm: 7.09px;
+@0-2mm: 4.72px;
+@0-15mm: 3.54px;
+@0-1mm: 2.36px;
+@0-05mm: 1.5px;
+
+@0-2mm-: -4.72px;
+
+#hillshade {
+  raster-opacity:1;
+}
+
+#CorbesNivell {
+  line-width: @0-05mm;
+  line-color:#704214;
+  line-opacity: 1;
+  [ele=100],[ele=200],[ele=300],[ele=400],[ele=500],[ele=600],[ele=700],[ele=800],[ele=900],[ele=1000],[ele=1100],[ele=1200],[ele=1300],[ele=1400],[ele=1500],[ele=1600],[ele=1700],[ele=1800],[ele=1900] {
+    line-width: @0-15mm;
+  }
+}
