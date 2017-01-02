@@ -33,7 +33,7 @@ Map {
 @0-05mm: 1.5px;
 
 @0-2mm-: -4.72px;
-
+/*
 #hillshade {
   raster-opacity:1;
 }
@@ -45,4 +45,4 @@ Map {
   [ele=100],[ele=200],[ele=300],[ele=400],[ele=500],[ele=600],[ele=700],[ele=800],[ele=900],[ele=1000],[ele=1100],[ele=1200],[ele=1300],[ele=1400],[ele=1500],[ele=1600],[ele=1700],[ele=1800],[ele=1900] {
     line-width: @0-15mm;
   }
-}
+}*/

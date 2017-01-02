@@ -10,7 +10,8 @@
   "maxzoom": 19,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
-    "map.css"
+    "map.css",
+    "sol.css"
   ],
   "scale": 1,
   "metatile": 3,
@@ -19,15 +20,45 @@
   "attribution": "",
   "Layer": [
     {
+      "id": "sol_bages",
+      "name": "sol_bages",
+      "class": "sol",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "/home/jaume/projectes/osm/sant-llorenc/data/sigpac/SIGPAC_07_Bages/SIGPAC_07_Bages.shp",
+        "type": "shape"
+      },
+      "srs-name": "custom",
+      "srs": "+proj=utm +zone=31 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+    },
+    {
+      "id": "sol_valles_or",
+      "name": "sol_valles_or",
+      "class": "sol",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "/home/jaume/projectes/osm/sant-llorenc/data/sigpac/SIGPAC_41_VallesOriental/SIGPAC_41_VallesOriental.shp",
+        "type": "shape"
+      },
+      "srs-name": "custom",
+      "srs": "+proj=utm +zone=31 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+    },
+    {
+      "id": "sol_valles_oc",
+      "name": "sol_valles_oc",
+      "class": "sol",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "/home/jaume/projectes/osm/sant-llorenc/data/sigpac/SIGPAC_40_VallesOccidental/SIGPAC_40_VallesOccidental.shp",
+        "type": "shape"
+      },
+      "srs-name": "custom",
+      "srs": "+proj=utm +zone=31 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+    },
+    {
       "id": "hillshade",
       "name": "hillshade",
       "geometry": "raster",
-      "extent": [
-        1.8121453948097221,
-        41.49673258176891,
-        2.1462370864861042,
-        41.83660755647937
-      ],
       "Datasource": {
         "file": "/home/jaume/projectes/osm/sant-llorenc/data/elevacions-5m/hillshade-sant-llorenc-25831.tiff",
         "type": "gdal"
