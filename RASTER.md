@@ -26,7 +26,7 @@ Suposem que hem creat una estructura de fitxers com la següent:
 En primer lloc cal unit els diferents fulls de les elevacions en un únic fitxers
 lògic. D'aquesta manera ens podem evitar fàcilment les imperfeccions que poden
 sorgir amb les imatges quan es canvien els sistemes de referència. Ens situem
-en el directori elevacions-2m i creem un fitxer virtual
+en el directori `elevacions-2m` i creem un fitxer virtual
 
 ```sh
 $ gdalbuildvrt mde.vrt ./txt/*.txt
