@@ -33,7 +33,7 @@ $ gdalbuildvrt mde.vrt ./txt/*.txt
 ```
 
 ### Ombrejat
-Per ombrejar les muntanyes s'executa el procediment ```hillshade``` de gdal
+Per ombrejar les muntanyes s'executa el procediment `hillshade` de gdal
 
 ```sh
 $ gdaldem hillshade mde.vrt hillshade.tif
@@ -43,9 +43,9 @@ $ gdaldem hillshade mde.vrt hillshade.tif
 Amb els pendents fem una operació similar que amb l'ombrejat. Els pendents
 s'utilitzen per emfatitzar i complementar l'ombrejat. Cal disposar d'un fitxer
 que defineixi el color utilitzar per a cada pendent que anomenarem
-```slope-ramp.txt```:
+`slope-ramp.txt`:
 
-```txt
+```
 90       0   0   0
 0      255 255 255
 ```
