@@ -16,12 +16,12 @@ EPSG:25831
 
 ## Conversió
 Suposem que hem creat una estructura de fitxers com la següent:
-
+```
 .
 +-- elevacions-2m
 |   +-- txt
 |   +-- zip
-
+```
 ### Unió
 En primer lloc cal unit els diferents fulls de les elevacions en un únic fitxers
 lògic. D'aquesta manera ens podem evitar fàcilment les imperfeccions que poden
