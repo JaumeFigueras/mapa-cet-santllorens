@@ -3,7 +3,8 @@ Fitxers i procediment per crear el mapa del CET de Sant Llorenç de Munt i l'Oba
 
 ## Eines
 Per poder crear i modificar els estils del mapa cal tenir diferents eines
-instal·lades a l'ordinador amb totes les seves dependències:
+instal·lades a l'ordinador (assumim que s'utilitza linux, encara que tot es pot
+fer amb OSX o Windows) amb totes les seves dependències:
 
 1. [Mapnik](http://www.mapnik.org) Eina de renderització de mapes
 2. [Kosmtik](https://github.com/kosmtik/kosmtik) Eina de pre-visualització de
@@ -22,7 +23,8 @@ així s'estableix un ordre de prioritat en la sibologia que es dibuixa.
 
 ### Grup 1: Capes ràster
 Les capes ràster són imatges creades a partir de la topografia (alçades
-i pendents) i dels usos del sòl.
+i pendents) i dels usos del sòl. L'origen i el processament de les dades està
+explicat en el fitxer [RASTER.md](RASTER.md)
 
 | Ordre | Origen | Tipus                             | Identificador  | Classe |
 | ----- | ------ | --------------------------------- | -------------- | ------ |
