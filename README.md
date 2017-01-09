@@ -33,3 +33,10 @@ explicat en el fitxer [RASTER.md](RASTER.md)
 | 3     | SIGPAC | Us del sòl Vallès Occidental      | sol_valles_oc  | sol    |
 | 4     | ICGC   | Ombrejat de muntanyes             | hillshade      |        |
 | 5     | ICGC   | Pendents                          | slope          |        |
+
+### Grup 2: Límits administratius
+
+| Ordre | Origen | Tipus                         | Identificador     | Classe |
+| ----- | ------ | ----------------------------- | ----------------- | ------ |
+| 1     | OSM    | Municipis                     | limits_municipals |        |
+| 2     | OSM    | Límits Parc Natural           | limits_parc       |        |
