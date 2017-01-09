@@ -11,7 +11,8 @@
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "map.css",
-    "sol.css"
+    "sol.css",
+    "limits.css"
   ],
   "scale": 1,
   "metatile": 3,
@@ -60,7 +61,7 @@
       "name": "hillshade",
       "geometry": "raster",
       "Datasource": {
-        "file": "/home/jaume/projectes/osm/sant-llorenc/data/elevacions-5m/hillshade-sant-llorenc-25831.tiff",
+        "file": "/home/jaume/projectes/osm/sant-llorenc/data/elevacions-2m/hillshade-2x.tif",
         "type": "gdal"
       },
       "srs-name": "custom",
@@ -71,12 +72,38 @@
       "name": "slope",
       "geometry": "raster",
       "Datasource": {
-        "file": "/home/jaume/projectes/osm/sant-llorenc/data/elevacions-5m/slope-sant-llorenc-25831.tiff",
+        "file": "/home/jaume/projectes/osm/sant-llorenc/data/elevacions-2m/slope-shade-2x.tif",
         "type": "gdal"
       },
       "srs-name": "custom",
       "srs": "+proj=utm +zone=31 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
     },
+    {
+      "id": "limits_municipals",
+      "name": "limits_municipals",
+      "geometry": "linestring",
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from planet_osm_line where ((boundary='administrative') and (name is null))) as line",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "id": "limits_parc",
+      "name": "limits_parc",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "/home/jaume/projectes/osm/sant-llorenc/data/cartografia-parc/etrs89/limits/limits-parc.shp",
+        "type": "shape"
+      },
+      "srs-name": "custom",
+      "srs": "+proj=utm +zone=31 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+    },
+
     {
       "id": "CorbesNivell",
       "name": "CorbesNivell",

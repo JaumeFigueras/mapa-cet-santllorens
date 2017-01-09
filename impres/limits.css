@@ -1,0 +1,13 @@
+#limits_municipals {
+  line-pattern-file: url('/home/jaume/projectes/osm/sant-llorenc/assets/symbols/limit-municipal.png');
+}
+
+#limits_parc {
+  line-color:#4bd12a;
+  line-width: @2-0mm;
+  line-join: round;
+  line-cap: round;
+  line-opacity: 1;
+  polygon-opacity:0;
+  polygon-fill:#ae8;
+}
