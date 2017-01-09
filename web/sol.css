@@ -1,0 +1,40 @@
+.sol {
+  [US = 'VF'], [US = 'FL'], [US = 'FV'], [US = 'OF'], [US = 'VO'], [US = 'CI'], [US = 'FY'], [US = 'FS'], [US = 'OV'], [US = 'VI'] {
+    polygon-opacity:1;
+    polygon-fill: #9ed88f;
+  }
+  [US = 'ZU'], [US = 'ED'] {
+    polygon-opacity:1;
+    polygon-fill:#aaaaaa;
+  }
+  [US = 'FO'] {
+    polygon-opacity:1;
+    polygon-fill:#a0cf85;
+  }
+  [US = 'IV'], [US = 'TH'] {
+    polygon-opacity:1;
+    polygon-fill:#cdf7c9;
+  }
+  [US = 'PS'], [US = 'PA'], [US = 'PR'] {
+    polygon-opacity:1;
+    polygon-fill:#cfeca8;
+  }
+  [US = 'IM'], [US = 'TA'] {
+    polygon-opacity:1;
+    polygon-fill:#b6b592;
+  }
+}
+
+#hillshade [zoom < 18] {
+  raster-opacity:0.3;
+}
+#hillshade-2x [zoom >= 18] {
+  raster-opacity:0.3;
+}
+
+#slope [zoom < 18] {
+  raster-opacity:0.1;
+}
+#slope-2x [zoom >= 18] {
+  raster-opacity:0.1;
+}
